@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="487.0" prefWidth="600.0" style="-fx-background-color: #d5e5ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label layoutX="186.0" layoutY="154.0" text="FX Point of Sale System - JDBC">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCustomer" fitHeight="80.0" fitWidth="80.0" layoutX="62.0" layoutY="240.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/customers.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgItem" fitHeight="80.0" fitWidth="80.0" layoutX="195.0" layoutY="240.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/items.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOrder" fitHeight="80.0" fitWidth="80.0" layoutX="310.0" layoutY="246.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/orders.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgViewOrders" fitHeight="80.0" fitWidth="80.0" layoutX="436.0" layoutY="240.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/report.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="10.0" layoutY="361.0" prefHeight="26.0" prefWidth="577.0" text="Welcome" textAlignment="CENTER" textFill="#0a39f7">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="13.0" layoutY="391.0" prefHeight="16.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="293.0" layoutX="171.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Pos-logo.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5785d0" height="25.0" layoutY="-2.0" strokeType="INSIDE" width="600.0" />
+      <Line endX="400.0" layoutX="135.0" layoutY="196.0" startX="-100.0" stroke="#acceeb" />
+   </children>
+</AnchorPane>
